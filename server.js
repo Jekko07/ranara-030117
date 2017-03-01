@@ -14,7 +14,8 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res){
   res.sendFile(path.join(__dirname, 'views/about.html'));
 });
-app.get('/about', function(req, res){
+
+app.get('/calculator', function(req, res){
   res.sendFile(path.join(__dirname, 'views/calculator.html'));
 });
 app.get('*', function(req, res){
